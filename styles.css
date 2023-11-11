@@ -1,0 +1,133 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    /* A1. margin - Area outside the border
+    A2. padding - Area between the content and the border*/
+    box-sizing: border-box;
+    font-family: Arial Rounded MT, sans-serif;
+    cursor: url(images/cat-cursor-point\ \(1\).png), pointer;
+    /* B1. box-sizing
+    B2. font-family
+    B3. cursor */
+}
+.container { 
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(#c771a55e, #c771a531), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    /* A3. background-image - background color of an element
+    A4. background-size - size of the background image
+    A5. background-position - starting position of a background image */
+    padding: 10px 8%;
+}
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: relative;
+    background-image: linear-gradient(#C771A5, #C771A5);
+    text-align: center;
+    /*B7. line-height
+    B8. text-align */
+}
+nav .logo p {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: #ffffff;
+    text-transform: initial;
+    letter-spacing: 1.5px;
+    cursor: url(images/cat-cursor-hover\ \(1\).png), pointer;
+    /*B9. font-size
+    B10. font-weight 
+    B11. float 
+    B12. text-transform 
+    B13. letter-spacing 
+    B14. cursor: url() */
+}
+nav ul {
+    float: right;
+}
+nav li {
+    display: table-cell;
+    list-style: none;
+    /*B15. display
+    B16. list-style */
+}
+nav li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    /*B17. text-decoration
+    */
+}
+nav li a:hover {
+    color: #f1c7e0;
+    transition: all 0.4s ease 0s;
+    cursor: url(images/cat-cursor-hover\ \(1\).png), pointer;
+    /*B18. transition
+    */
+}
+.content {
+    margin-top: 15%;
+    color: #ffffff;
+    max-width: 620px;
+    /*B19. max-width
+    */
+}
+.content h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+}
+.content p {
+    font-size: 30px;
+}
+.content form {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    /*B20. align-items
+    B21. border-radius 
+    B22. margin-top 
+    B23. background: #color */
+}
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #C771A5;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: url(images/cat-cursor-hover\ \(1\).png), pointer;
+    /*B24. outline
+    B25. border */
+}
+.content form input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.content form input:hover {
+    cursor: url(images/cat-cursor-hover\ \(1\).png), pointer;
+}
+.content form .btn {
+    font-size: 15px;
+    padding: 10px 30px;
+}
+footer {
+    text-align: center;
+}
